@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/martinrossil/x-tags/compare/v1.0.1...v1.0.2) (2023-10-28)
+
+
+### Bug Fixes
+
+* test release-please ([4f94602](https://github.com/martinrossil/x-tags/commit/4f94602b920d2ff7ce8b29b79e377546c3551d1d))
+
 ## [1.0.1](https://github.com/martinrossil/x-tags/compare/v1.0.0...v1.0.1) (2023-10-28)
 
 
