@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/martinrossil/x-tags/compare/v1.0.2...v1.0.3) (2023-10-28)
+
+
+### Bug Fixes
+
+* fix github action build error. ([8e92658](https://github.com/martinrossil/x-tags/commit/8e92658eddd7728e5d1944ee362d0938c7061ef2))
+
 ## [1.0.2](https://github.com/martinrossil/x-tags/compare/v1.0.1...v1.0.2) (2023-10-28)
 
 
