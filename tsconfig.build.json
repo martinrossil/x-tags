@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",                     // Set the JavaScript language version for emitted JavaScript and include compatible library declarations.
+        "module": "ESNext",                     // Sets the module system for the program. See the Modules reference page for more information. You very likely want "CommonJS" for node projects.
+        "moduleResolution": "Node",             // Specify the module resolution strategy, should this be "nodenext"
+        "strict": true,                         // The strict flag enables a wide range of type checking behavior that results in stronger guarantees of program correctness. Turning this on is equivalent to enabling all of the strict mode family options, which are outlined below. You can then turn off individual strict mode family checks as needed.
+        "noUncheckedIndexedAccess": true,       // Add undefined to a type when accessed using an index.
+		"removeComments": true
+    },
+    "include": ["src/index.ts"],
+}
