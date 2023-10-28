@@ -1,2 +1,2 @@
 # x-tags
-x-tags, a world without CSS.
+Build websites without CSS.
