@@ -6,6 +6,9 @@
 		"xo-typescript"
 	],
 	"ignorePatterns": ["**/*.js", "node_modules"],
+	"rules": {
+		"@typescript-eslint/naming-convention": "off"              // so we can use first_last
+	}
 	/* 
 	"rules": {
 		"object-curly-spacing": "off",
@@ -13,7 +16,7 @@
 		"@typescript-eslint/ban-types": "off",
 		"@typescript-eslint/no-confusing-void-expression": "off",
 		"@typescript-eslint/parameter-properties": "off",
-		"@typescript-eslint/naming-convention": "off",              // so we can use first_last
+		
 		"@typescript-eslint/restrict-plus-operands": "off",         // so we can do 'page=' + 1
 		"@typescript-eslint/no-unsafe-argument": "warn",
 		"@typescript-eslint/no-unsafe-assignment": "warn",
