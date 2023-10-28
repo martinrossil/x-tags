@@ -21,9 +21,9 @@ export default defineConfig({
 		compiler({
             language_in: 'ECMASCRIPT_2020',
             compilation_level: 'ADVANCED',
-            language_out: 'ECMASCRIPT_2017'
+            language_out: 'ECMASCRIPT_2015'
         }),
-		strip({ include: '**/*.(js|ts)' }),
+		// strip({ include: '**/*.(js|ts)' }),
         filesize({ showBrotliSize: true }),
 	],
 	output: {
