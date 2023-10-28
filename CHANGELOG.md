@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/martinrossil/x-tags/compare/v1.0.4...v1.1.0) (2023-10-28)
+
+
+### Features
+
+* update x-base ([44db28b](https://github.com/martinrossil/x-tags/commit/44db28b956a7bb43007b0aac943ef2e9bd45ab7c))
+
 ## [1.0.4](https://github.com/martinrossil/x-tags/compare/v1.0.3...v1.0.4) (2023-10-28)
 
 
