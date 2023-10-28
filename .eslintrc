@@ -7,12 +7,13 @@
 	],
 	"ignorePatterns": ["**/*.js", "node_modules"],
 	"rules": {
-		"@typescript-eslint/naming-convention": "off"              // so we can use first_last
+		"@typescript-eslint/naming-convention": "off",              // so we can use first_last
+		"@typescript-eslint/object-curly-spacing": "off"
 	}
 	/* 
 	"rules": {
 		"object-curly-spacing": "off",
-		"@typescript-eslint/object-curly-spacing": "off",
+		
 		"@typescript-eslint/ban-types": "off",
 		"@typescript-eslint/no-confusing-void-expression": "off",
 		"@typescript-eslint/parameter-properties": "off",
