@@ -1,1 +1,1 @@
-export const answer = 42;
+export { default as XBase } from './x-base/x-base';
