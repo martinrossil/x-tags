@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/martinrossil/x-tags/compare/v1.1.0...v1.1.1) (2023-10-29)
+
+
+### Bug Fixes
+
+* test NPM version badge ([80cc0ec](https://github.com/martinrossil/x-tags/commit/80cc0ecb1b142e8f0cf73588b08cb049bbd5f3f9))
+
 ## [1.1.0](https://github.com/martinrossil/x-tags/compare/v1.0.4...v1.1.0) (2023-10-28)
 
 
