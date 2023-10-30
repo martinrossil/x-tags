@@ -11,6 +11,8 @@
 		"@typescript-eslint/naming-convention": "off",    // so we can use first_last
 		"@typescript-eslint/object-curly-spacing": "off",
 		"@typescript-eslint/consistent-type-imports": "off",        // so we don't have to do import type { SomeType }
+		"no-unused-expressions": "off",
+    	"@typescript-eslint/no-unused-expressions": "off"
 	},
 	"globals": {
 		"describe": "readonly", // describe and it is defined as globals by mocha
