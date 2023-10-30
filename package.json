@@ -6,9 +6,10 @@
   "module": "lib/index.js",
   "type": "module",
   "scripts": {
+    "dev": "rollup --c rollup.dev.js --watch",
     "lint": "eslint src/**/*",
     "test": "web-test-runner src/**/*.test.ts --node-resolve --coverage",
-    "test2": "web-test-runner src/**/*.test.ts --coverage --node-resolve --playwright --browsers chromium firefox webkit",
+    "test:watch": "web-test-runner src/**/*.test.ts --node-resolve --watch",
     "build": "rollup -c rollup.build.js"
   },
   "repository": {
@@ -41,6 +42,8 @@
     "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-esbuild": "^6.1.0",
     "rollup-plugin-filesize": "^10.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^2.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.2.2"
   }
