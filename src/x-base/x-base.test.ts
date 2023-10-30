@@ -5,15 +5,60 @@ import { assert } from 'chai';
 
 describe('x-base', () => {
 	it('Description here', async () => {
-		const element = await fixture(html`<x-base><x-base></x-base></x-base>`);
-		const compStyles = window.getComputedStyle(element);
-		console.log(compStyles.width);
-		assert.isDefined(element);
-		const bound = element.getBoundingClientRect();
-		console.log(document.documentElement.clientWidth, document.documentElement.clientHeight, bound);
+		/* const outer = new XBase('outer');
+		outer.setAttribute('name', 'outer');
+		document.body.appendChild(outer);
+
+		const inner = new XBase('inner');
+		inner.setAttribute('name', 'inner');
+		outer.appendChild(inner);
+
+		const deepest = new XBase('deepest');
+		deepest.setAttribute('name', 'deepest');
+		inner.appendChild(deepest); */
+		XBase;
+
+		document.body.innerHTML = `
+		<x-base id="outer" name="outer">
+			<x-fill>
+				<x-color>#123456</x-color>
+			</x-fill>
+			<x-base name="inner">
+				<x-base name="deepest">
+					<x-base name="even deeper">Hello from even deeper</x-base>
+					<x-base name="even deeper"></x-base>
+				</x-base>
+			</x-base>
+		</x-base>`;
+
+		const element = document.getElementById('outer');
+		if (element) {
+			const compStyles = window.getComputedStyle(element);
+			const bound = element.getBoundingClientRect();
+			console.log(bound);
+		}
+		/* const element = await fixture(html`
+		<x-base name="outer">
+			<x-fill>
+				<x-color>#123456</x-color>
+			</x-fill>
+			<x-base name="inner">
+				<x-base name="deepest">
+					<x-base name="even deeper">Hello from even deeper</x-base>
+					<x-base name="even deeper"></x-base>
+				</x-base>
+			</x-base>
+		</x-base>`);
+		console.log('isConnected', element.isConnected); */
+		// document.body.appendChild(element);
+		// const compStyles = window.getComputedStyle(element);
+		// console.log(compStyles.width);
+		// assert.isDefined(element);
+		// const bound = element.getBoundingClientRect();
+		// console.log(document.documentElement.clientWidth, document.documentElement.clientHeight, bound);
 	});
 
-	it('Description here', async () => {
+	/* it('Description here', async () => {
 		const element = new XBase();
 		document.body.appendChild(element);
 		const compStyles = window.getComputedStyle(element);
@@ -21,34 +66,5 @@ describe('x-base', () => {
 		assert.isDefined(element);
 		const bound = element.getBoundingClientRect();
 		console.log(bound);
-	});
+	}); */
 });
-
-/* A
-describe('MyElement', () => {
-  it('has a default title "Hey there" and counter 5', async () => {
-    const el: MyElement = await fixture(html` <my-element></my-element> `);
-
-    expect(el.title).to.equal('Hey there');
-    expect(el.counter).to.equal(5);
-  });
-
-  it('increases the counter on button click', async () => {
-    const el: MyElement = await fixture(html` <my-element></my-element> `);
-    el.shadowRoot!.querySelector('button')!.click();
-
-    expect(el.counter).to.equal(6);
-  });
-
-  it('can override the title via attribute', async () => {
-    const el: MyElement = await fixture(html` <my-element title="attribute title"></my-element> `);
-
-    expect(el.title).to.equal('attribute title');
-  });
-
-  it('passes the a11y audit', async () => {
-    const el: MyElement = await fixture(html` <my-element></my-element> `);
-
-    await expect(el).shadowDom.to.be.accessible();
-  });
-}); */
