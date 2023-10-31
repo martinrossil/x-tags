@@ -25,7 +25,7 @@ describe('x-base', () => {
 			</x-fill>
 			<x-base name="inner">
 				<x-base name="deepest">
-					<x-base name="even deeper">Hello from even deeper</x-base>
+					<x-base name="even deeper">Hello from even deeper 3</x-base>
 					<x-base name="even deeper"></x-base>
 				</x-base>
 			</x-base>
@@ -33,7 +33,8 @@ describe('x-base', () => {
 
 		const element = document.getElementById('outer');
 		if (element) {
-			const compStyles = window.getComputedStyle(element);
+			const compStyles = window.getComputedStyle(document.body);
+			console.log(compStyles.margin);
 			const bound = element.getBoundingClientRect();
 			console.log(bound);
 		}
