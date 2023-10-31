@@ -6,6 +6,8 @@ export default class XBase extends HTMLElement {
 	public constructor() {
 		super();
 		console.log('XBase construct', 'atribute [' + this.getAttribute('name') + ']');
+		this.style.outline = 'solid blue 10px';
+		this.style.outlineColor = 'linear-gradient(103deg, #AA24BF 14.31%, rgba(170, 36, 191, 0.00) 83.65%)';
 	}
 
 	public connectedCallback() {
