@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/martinrossil/x-tags/compare/v1.1.1...v1.1.2) (2023-10-31)
+
+
+### Bug Fixes
+
+* create border ([f4f7cbd](https://github.com/martinrossil/x-tags/commit/f4f7cbd779252db8cc7ec0544ace3187ac1aecda))
+
 ## [1.1.1](https://github.com/martinrossil/x-tags/compare/v1.1.0...v1.1.1) (2023-10-29)
 
 
