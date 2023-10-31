@@ -36,6 +36,7 @@ describe('x-base', () => {
 			const compStyles = window.getComputedStyle(document.body);
 			console.log(compStyles.margin);
 			const bound = element.getBoundingClientRect();
+
 			console.log(bound);
 		}
 		/* const element = await fixture(html`
