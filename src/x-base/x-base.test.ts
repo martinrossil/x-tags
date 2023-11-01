@@ -6,27 +6,33 @@ import { assert } from 'chai';
 XBase;
 
 describe('x-base', () => {
-	it('Description here', async () => {
-		document.body.innerHTML = `
-		<x-app>
-			<x-base id="outer" name="outer">
-				<x-fill>
-					<x-color>#123456</x-color>
-				</x-fill>
-				<x-base name="inner">
-					<x-base name="deepest">
-						<x-base name="even deeper">Hello from even deeper 3</x-base>
-						<x-base name="even deeper"></x-base>
-					</x-base>
-				</x-base>
-			</x-base>
-		</x-app>`;
+	describe('x-base', () => {
+		it('width attribute', () => {
+			document.body.innerHTML = `
+				<x-app>
+					<x-base id="element" width="200" height="200"></x-base>
+				</x-app>`;
+			const element = document.getElementById('element');
+			if (element) {
+				const bound = element.getBoundingClientRect();
+				assert.strictEqual(bound.width, 200);
+			} else {
+				throw new Error('element is not defined');
+			}
+		});
 
-		const element = document.getElementById('outer');
-		if (element) {
-			const compStyles = window.getComputedStyle(document.body);
-			console.log(compStyles.margin);
-			const bound = element.getBoundingClientRect();
-		}
+		it('height attribute', () => {
+			document.body.innerHTML = `
+				<x-app>
+					<x-base id="element" width="200" height="200"></x-base>
+				</x-app>`;
+			const element = document.getElementById('element');
+			if (element) {
+				const bound = element.getBoundingClientRect();
+				assert.strictEqual(bound.height, 200);
+			} else {
+				throw new Error('element is not defined');
+			}
+		});
 	});
 });
