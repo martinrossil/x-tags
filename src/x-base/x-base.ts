@@ -4,7 +4,7 @@
 
 export default class XBase extends HTMLElement {
 	public static get observedAttributes() {
-		return ['width', 'height'];
+		return ['width', 'height', 'test'];
 	}
 
 	public constructor() {
