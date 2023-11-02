@@ -18,7 +18,7 @@ export default class XBase extends HTMLElement {
 		// console.log('x-base child count', this.childElementCount);
 	}
 
-	public attributeChangedCallback(name: 'width' | 'height', oldValue: string, newValue: string) {
+	public attributeChangedCallback(name: string, oldValue: string, newValue: string) {
 		// console.log('name', name, '[' + newValue + ']');
 		switch (name) {
 			case 'width': this.widthAttributeChanged(parseInt(newValue, 10));
