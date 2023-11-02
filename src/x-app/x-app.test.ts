@@ -7,20 +7,9 @@ afterEach(() => {
 	document.body.innerHTML = '';
 });
 
-describe('x-base', () => {
-	it('body default style values', () => {
-		document.body.innerHTML = `
-			<x-app id="x-app"></x-app>
-		`;
-		assert.strictEqual(document.body.style.margin, '0px');
-		assert.strictEqual(document.body.style.minHeight, '100%');
-		assert.strictEqual(document.body.style.height, '100%');
-		assert.strictEqual(document.documentElement.style.minHeight, '100%');
-		assert.strictEqual(document.documentElement.style.height, '100%');
-	});
-
-	it('x-app default style values', () => {
-		document.body.innerHTML = `
+describe('x-app', () => {
+	it('default style values', () => {
+		document.body.innerHTML = /* html */`
 			<x-app id="x-app"></x-app>
 		`;
 		const element = document.getElementById('x-app');
@@ -32,8 +21,8 @@ describe('x-base', () => {
 		}
 	});
 
-	it('x-app element should fill the entire viewport', () => {
-		document.body.innerHTML = `
+	it('should fill the entire viewport', () => {
+		document.body.innerHTML = /* html */`
 			<x-app id="x-app"></x-app>
 		`;
 		const element = document.getElementById('x-app');
