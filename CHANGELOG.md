@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0](https://github.com/martinrossil/x-tags/compare/v1.1.2...v1.2.0) (2023-11-01)
+
+
+### Features
+
+* create x-app element closes [#26](https://github.com/martinrossil/x-tags/issues/26) ([fac1fdc](https://github.com/martinrossil/x-tags/commit/fac1fdc914e8bcb74ec0bb2fc880976311ac21fe))
+* create x-frame closes [#19](https://github.com/martinrossil/x-tags/issues/19) ([c0ce41a](https://github.com/martinrossil/x-tags/commit/c0ce41a38a165f8863c96b7429a2150082f3a4ef))
+* width and height attributes ([e76558b](https://github.com/martinrossil/x-tags/commit/e76558be86d875dc5f59bd273743f1021321f75f))
+
 ## [1.1.2](https://github.com/martinrossil/x-tags/compare/v1.1.1...v1.1.2) (2023-10-31)
 
 
