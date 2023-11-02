@@ -9,6 +9,7 @@
 ![GitHub](https://img.shields.io/github/license/martinrossil/x-tags)
 ![npm type definitions](https://img.shields.io/npm/types/x-tags)
 ![npm package minimized gzipped size (select exports)](https://img.shields.io/bundlejs/size/x-tags)
+![bundlephobia](https://badgen.net/bundlephobia/minzip/x-tags)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/martinrossil/x-tags)
 ![GitHub repo size](https://img.shields.io/github/repo-size/martinrossil/x-tags)
 
