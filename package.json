@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "rollup --c rollup.dev.js --watch",
     "lint": "eslint src/**/*",
+	"lint:watch": "tsc-watch --onSuccess \"npm run lint\"",
     "test": "web-test-runner src/**/*.test.ts --node-resolve --coverage",
     "test:watch": "web-test-runner src/**/*.test.ts --node-resolve --watch",
     "build": "rollup -c rollup.build.js"
@@ -45,6 +46,7 @@
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^2.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
+    "tsc-watch": "^6.0.4",
     "typescript": "^5.2.2"
   }
 }
