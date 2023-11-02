@@ -32,5 +32,12 @@ describe('x-frame', () => {
 				</x-frame>
 			</x-app>`;
 		});
+
+		it('test attribute', () => {
+			document.body.innerHTML = /* html */`
+				<x-app>
+					<x-frame test="test"></x-frame>
+				</x-app>`;
+		});
 	});
 });

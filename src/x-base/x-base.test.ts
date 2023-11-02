@@ -27,7 +27,7 @@ describe('x-base', () => {
 		it('test attribute', () => {
 			document.body.innerHTML = /* html */`
 				<x-app>
-					<x-base id="element" test="test"></x-base>
+					<x-base test="test"></x-base>
 				</x-app>`;
 		});
 
