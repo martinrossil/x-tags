@@ -9,5 +9,5 @@
         "noErrorTruncation": true,
 		"noEmit": true							// So we don't compile .js files when running tsc-watch for linting
     },
-    "include": ["src/**/*"],
+    "include": ["src/**/*.ts"],
 }
