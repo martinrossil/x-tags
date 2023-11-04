@@ -21,10 +21,10 @@
 		"@typescript-eslint/prefer-optional-chain": "off",
 		"@typescript-eslint/ban-types": "off"					// so we can use null as argument type 					
 	},
-	"globals": {
+	/* "globals": {
 		"describe": "readonly", // describe and it is defined as globals by mocha
 		"it": "readonly"
-	}
+	} */
 	/* 
 	"rules": {
 		"object-curly-spacing": "off",
