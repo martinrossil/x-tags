@@ -1,8 +1,8 @@
-import XBase from '../x-base/x-base';
+import XElement from '../x-element/x-element';
 
-export default class XFrame extends XBase {
+export default class XFrame extends XElement {
 	public static get observedAttributes() {
-		return [...XBase.observedAttributes, 'padding'];
+		return [...XElement.observedAttributes, 'padding'];
 	}
 
 	public constructor() {
