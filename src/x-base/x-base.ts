@@ -50,13 +50,13 @@ export default class XBase extends HTMLElement {
 
 	private setFill() {
 		const fill = this.getChildTag(this, 'X-FILL');
-		console.log(fill);
+		// console.log(fill);
 		if (fill) {
 			const solid = this.getChildTag(fill, 'X-SOLID');
-			console.log(solid);
+			// console.log(solid);
 			if (solid) {
 				const hex = this.getChildTag(solid, 'X-HEX');
-				console.log(hex);
+				// console.log(hex);
 			}
 		}
 	}
