@@ -28,10 +28,10 @@ describe('x-app', () => {
 		const element = document.getElementById('x-app');
 		const viewportWidth = document.documentElement.clientWidth;
 		const viewportHeight = document.documentElement.clientHeight;
-		let x = null;
-		let y = null;
-		let width = null;
-		let height = null;
+		let x = NaN;
+		let y = NaN;
+		let width = NaN;
+		let height = NaN;
 
 		if (element) {
 			const bound = element.getBoundingClientRect();
