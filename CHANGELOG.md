@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.0](https://github.com/martinrossil/x-tags/compare/v1.2.0...v1.3.0) (2023-11-04)
+
+
+### Features
+
+* **color:** create color utils ([e70a09b](https://github.com/martinrossil/x-tags/commit/e70a09b089080b11aa90fabe7187211cd3f734a4))
+* **padding:** implement padding ([97d285c](https://github.com/martinrossil/x-tags/commit/97d285c10404133934da54551780ed653ad538b9))
+* **x-base:** add fill ([f8b9434](https://github.com/martinrossil/x-tags/commit/f8b9434354e0f17e16f70d453554c8d704c7e1ec))
+* **x-element:** create x-element ([ef20a0c](https://github.com/martinrossil/x-tags/commit/ef20a0c3c681dad7ea1e3938e28a1a60e28cbd45))
+* **x-fill:** create x-fill.ts ([25cbe83](https://github.com/martinrossil/x-tags/commit/25cbe83f36824d345e09d7f2f36955c65078f4ba))
+* **x-hex:** create hex.ts ([ad39b4e](https://github.com/martinrossil/x-tags/commit/ad39b4e15e2b4189d0f12bca460f52bc527ffff6))
+* **x-property:** create x-property.ts ([025683b](https://github.com/martinrossil/x-tags/commit/025683b0fff1280626f39151c12f4f8e2ffcb04c))
+* **x-solid:** create x-solid.ts ([0bc858c](https://github.com/martinrossil/x-tags/commit/0bc858c9196416667a5dff9550cc64c6dcd7e5ad))
+
 ## [1.2.0](https://github.com/martinrossil/x-tags/compare/v1.1.2...v1.2.0) (2023-11-01)
 
 
