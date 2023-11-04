@@ -10,11 +10,6 @@ export default class XFrame extends XBase {
 		// console.log('x-frame construct()');
 	}
 
-	public connectedCallback() {
-		// console.log('x-frame connectedCallback');
-		// console.log('x-frame child count', this.childElementCount);
-	}
-
 	public attributeChangedCallback(name: string, oldValue: string, newValue: string) {
 		super.attributeChangedCallback(name, oldValue, newValue);
 		// console.log('name', name, '[' + newValue + ']');
