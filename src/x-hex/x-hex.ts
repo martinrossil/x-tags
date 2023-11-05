@@ -5,7 +5,7 @@ export default class XHex extends XProperty {
 		return ['hex', 'alpha'];
 	}
 
-	private _value = '';
+	private _hex = '';
 
 	private _alpha = '';
 
@@ -35,7 +35,7 @@ export default class XHex extends XProperty {
 	// check for connected === true, notify parents if true
 	private hexAttributeChanged(value: string) {
 		// console.log('value', value, this.connected);
-		this._value = value;
+		this._hex = value;
 	}
 
 	// check for connected === true, notify parents if true
