@@ -5,4 +5,7 @@ export { default as XElement } from './x-element/x-element';
 export { default as XFill } from './x-fill/x-fill';
 export { default as XSolid } from './x-solid/x-solid';
 export { default as XHex } from './x-hex/x-hex';
+export { default as XHorizontal } from './x-horizontal/x-horizontal';
+export { default as XVertical } from './x-vertical/x-vertical';
 export { default as XProperty } from './x-property/x-property';
+export { default as XConstraints } from './x-constraints/x-constraints';
