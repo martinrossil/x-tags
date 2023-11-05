@@ -12,7 +12,7 @@ export default class XBase extends HTMLElement {
 	public constructor() {
 		super();
 		this.style.display = 'inline-block';
-		// line-height is set to 0 so we don't get extra height becuase of inline display
+		// line-height is set to 0 so we don't get extra height because of inline display
 		this.style.lineHeight = '0px';
 		// line-height is set to 0 so we don't get extra space between inline display items
 		this.style.fontSize = '0px';
@@ -20,21 +20,6 @@ export default class XBase extends HTMLElement {
 
 	public connectedCallback() {
 		this.setFill();
-		// console.log('XFrame connectedCallback()');
-		if (this.firstElementChild && this.firstElementChild.tagName === 'X-FILL') {
-			// console.log('-------------- X-FILL found');
-			const xFill = this.firstElementChild;
-			if (xFill.firstElementChild && xFill.firstElementChild.tagName === 'X-SOLID') {
-				// console.log('------------ X-SOLID found');
-				const xSolid = xFill.firstElementChild;
-				if (xSolid.firstElementChild && xSolid.firstElementChild.tagName === 'X-HEX') {
-					const xHex = xSolid.firstElementChild;
-					const hex = xHex.getAttribute('hex');
-					const alpha = xHex.getAttribute('alpha');
-					this.style.background = hexToRGBA(hex, alpha);
-				}
-			}
-		}
 	}
 
 	public attributeChangedCallback(name: string, oldValue: string, newValue: string) {
@@ -57,6 +42,11 @@ export default class XBase extends HTMLElement {
 			if (solid) {
 				const hex = this.getChildTag(solid, 'X-HEX');
 				// console.log(hex);
+				if (hex) {
+					const value = hex.getAttribute('hex');
+					const alpha = hex.getAttribute('alpha');
+					this.style.background = hexToRGBA(value, alpha);
+				}
 			}
 		}
 	}
