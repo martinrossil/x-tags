@@ -9,3 +9,4 @@ export { default as XHorizontal } from './x-horizontal/x-horizontal';
 export { default as XVertical } from './x-vertical/x-vertical';
 export { default as XProperty } from './x-property/x-property';
 export { default as XConstraints } from './x-constraints/x-constraints';
+export { default as XAutoLayout } from './x-auto-layout/x-auto-layout';
