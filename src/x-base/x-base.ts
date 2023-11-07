@@ -3,6 +3,7 @@
  */
 
 import { hexToRGBA } from '../utils/color';
+import { getChildTag } from '../utils/tags';
 
 export default class XBase extends HTMLElement {
 	public static get observedAttributes() {
@@ -18,10 +19,6 @@ export default class XBase extends HTMLElement {
 		this.style.fontSize = '0px';
 	}
 
-	public connectedCallback() {
-		this.setFill();
-	}
-
 	public attributeChangedCallback(name: string, oldValue: string, newValue: string) {
 		// console.log('name', name, '[' + newValue + ']');
 		switch (name) {
@@ -33,14 +30,18 @@ export default class XBase extends HTMLElement {
 		}
 	}
 
+	protected connectedCallback() {
+		this.setFill();
+	}
+
 	private setFill() {
-		const fill = this.getChildTag(this, 'X-FILL');
+		const fill = getChildTag(this, 'X-FILL');
 		// console.log(fill);
 		if (fill) {
-			const solid = this.getChildTag(fill, 'X-SOLID');
+			const solid = getChildTag(fill, 'X-SOLID');
 			// console.log(solid);
 			if (solid) {
-				const hex = this.getChildTag(solid, 'X-HEX');
+				const hex = getChildTag(solid, 'X-HEX');
 				// console.log(hex);
 				if (hex) {
 					const value = hex.getAttribute('hex');
@@ -49,16 +50,6 @@ export default class XBase extends HTMLElement {
 				}
 			}
 		}
-	}
-
-	private getChildTag(parent: Element, tag: 'X-FILL' | 'X-SOLID' | 'X-HEX') {
-		for (const element of parent.children) {
-			if (element.tagName === tag) {
-				return element;
-			}
-		}
-
-		return null;
 	}
 
 	private widthAttributeChanged(value: number) {
