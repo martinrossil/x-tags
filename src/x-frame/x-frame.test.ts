@@ -13,9 +13,9 @@ describe('x-frame', () => {
 	describe('padding attribute', () => {
 		it('given padding is 100, size should be 200x200', () => {
 			document.body.innerHTML = /* html */`
-				<x-app>
-					<x-frame id="x-frame" padding="100"></x-frame>
-				</x-app>`;
+			<x-app>
+				<x-frame id="x-frame" padding="100"></x-frame>
+			</x-app>`;
 			const element = document.getElementById('x-frame');
 			if (element) {
 				const bound = element.getBoundingClientRect();
