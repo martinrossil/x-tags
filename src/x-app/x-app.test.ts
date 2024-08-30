@@ -19,7 +19,7 @@ describe('x-app', () => {
 		} else {
 			throw new Error('element is not defined');
 		}
-	});
+	}); 
 
 	it('should fill the entire viewport', () => {
 		document.body.innerHTML = /* html */`

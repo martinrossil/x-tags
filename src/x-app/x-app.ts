@@ -12,4 +12,4 @@ export default class XApp extends XFrame {
 		this.style.minHeight = '100%';
 	}
 }
-customElements.define('x-app', XApp);
+customElements.define('x-app', XApp);  
